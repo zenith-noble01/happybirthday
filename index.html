@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>🎁 Happy Birthday!!! :)</title>
+    <meta name="title" content="🎉Happy birthday from Fotie" />
+    <meta
+      name="description"
+      content="Wishing you a birthday full of joy and happiness. Happy birthday, tulip.🎊🎈 "
+    />
+    <meta name="keywords" content="friend, birthday, celebrate, happy" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #861657;
+        background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+      .button {
+        display: inline-block;
+        position: relative;
+      }
+      .button.is-play {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+      .button.is-play .button-outer-circle {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+      }
+      .button.is-play .button-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        transform: translate(-50%, -50%);
+      }
+      .button.is-play .button-icon .triangle {
+        -webkit-animation: fadeIn 7s ease;
+        animation: fadeIn 7s ease;
+      }
+      .button.is-play .button-icon .path {
+        stroke-dasharray: 90;
+        stroke-dashoffset: 0;
+        -webkit-animation: triangleStroke 3s;
+        animation: triangleStroke 3s;
+        -webkit-animation-timing-function: ease;
+        animation-timing-function: ease;
+      }
+      .has-scale-animation {
+        -webkit-animation: smallScale 3s infinite;
+        animation: smallScale 3s infinite;
+      }
+      .has-delay-short {
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+      }
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes triangleStroke {
+        from {
+          stroke-dashoffset: 90;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      @keyframes triangleStroke {
+        from {
+          stroke-dashoffset: 90;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      @-webkit-keyframes smallScale {
+        from {
+          transform: scale(1);
+          opacity: 1;
+        }
+        to {
+          transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+      @keyframes smallScale {
+        from {
+          transform: scale(1);
+          opacity: 1;
+        }
+        to {
+          transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+    </style>
+    <div class="container">
+      <a class="button is-play" id="__playBirthday" href="#">
+        <div class="button-outer-circle has-scale-animation"></div>
+        <div
+          class="button-outer-circle has-scale-animation has-delay-short"
+        ></div>
+        <div class="button-icon is-play">
+          <svg height="100%" width="100%" fill="#f857a6">
+            <polygon
+              class="triangle"
+              points="5,0 30,15 5,30"
+              viewBox="0 0 30 15"
+            ></polygon>
+            <path
+              class="path"
+              d="M5,0 L30,15 L5,30z"
+              fill="#ffa69e"
+              stroke="#861657"
+              stroke-width="1"
+            ></path>
+          </svg></div
+      ></a>
+    </div>
+
+    <script>
+      document
+        .getElementById("__playBirthday")
+        .addEventListener("click", () => {
+          console.log("Play birthday...");
+          window.location.replace("terminal.html");
+        });
+    </script>
+  </body>
+</html>
